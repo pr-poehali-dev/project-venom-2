@@ -1,30 +1,30 @@
 import { useEffect, useRef, useState } from "react"
-import { Home, Building, Armchair, Trees } from "lucide-react"
 import { HighlightedText } from "./HighlightedText"
+import Icon from "@/components/ui/icon"
 
 const expertiseAreas = [
   {
-    title: "Жилая архитектура",
-    description: "Создаем дома, которые сочетают красоту с комфортом, где каждое пространство служит и форме, и функции.",
-    icon: Home,
+    title: "Евроокна ПВХ",
+    description: "Производим окна из профильных систем REHAU, VEKA и KBE. Однокамерные, двухкамерные и трёхкамерные стеклопакеты для любых условий.",
+    icon: "AppWindow",
   },
   {
-    title: "Коммерческие объекты",
+    title: "Балконы и лоджии",
     description:
-      "Проектируем рабочие пространства, которые вдохновляют на продуктивность и отражают ценности передовых организаций.",
-    icon: Building,
+      "Остекление балконов под ключ: холодное и тёплое остекление, обшивка, утепление, полы и потолки. Превращаем балкон в полноценную комнату.",
+    icon: "Building2",
   },
   {
-    title: "Дизайн интерьеров",
+    title: "Входные группы",
     description:
-      "Создаем интерьеры, которые гармонируют с архитектурной оболочкой, формируя целостный пространственный опыт.",
-    icon: Armchair,
+      "Пластиковые входные двери и витражи для частных домов и коммерческих объектов. Надёжно, тепло, эстетично.",
+    icon: "DoorOpen",
   },
   {
-    title: "Градостроительство",
+    title: "Монтаж и сервис",
     description:
-      "Формируем сообщества через продуманную интеграцию общественных пространств, зданий и природных элементов.",
-    icon: Trees,
+      "Профессиональный монтаж с демонтажем старых окон, вывозом мусора и отделкой откосов. Гарантийное и послегарантийное обслуживание.",
+    icon: "Wrench",
   },
 ]
 
@@ -59,18 +59,17 @@ export function Expertise() {
         <div className="max-w-3xl mb-20">
           <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Наши услуги</p>
           <h2 className="text-6xl font-medium leading-[1.15] tracking-tight mb-6 text-balance lg:text-8xl">
-            <HighlightedText>Экспертиза</HighlightedText>, отточенная
+            <HighlightedText>Полный цикл</HighlightedText> —
             <br />
-            практикой
+            от замера до монтажа
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed">
-            Каждый проект опирается на десятилетия совокупного опыта, создавая архитектуру, которая одновременно инновационна и вневременна.
+            Более 15 лет на рынке. Свыше 10 000 установленных окон и балконов по всему городу. Работаем быстро, чисто и с гарантией.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-x-12 gap-y-16">
           {expertiseAreas.map((area, index) => {
-            const Icon = area.icon
             return (
               <div
                 key={area.title}
@@ -91,7 +90,7 @@ export function Expertise() {
                     transitionDelay: `${index * 150}ms`,
                   }}
                 >
-                  <Icon className="w-10 h-10 mb-4 text-foreground" strokeWidth={1.25} />
+                  <Icon name={area.icon} size={40} className="mb-4 text-foreground" />
                 </div>
                 <h3 className="text-xl font-medium mb-4">{area.title}</h3>
                 <p className="text-muted-foreground leading-relaxed">{area.description}</p>

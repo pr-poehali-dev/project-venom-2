@@ -4,35 +4,35 @@ import { ArrowUpRight } from "lucide-react"
 const projects = [
   {
     id: 1,
-    title: "Резиденция Светлая",
-    category: "Жилой дом",
-    location: "Москва, Россия",
+    title: "ЖК «Северная звезда»",
+    category: "Остекление новостройки",
+    location: "248 квартир",
     year: "2024",
-    image: "/images/hously-1.png",
+    image: "https://cdn.poehali.dev/projects/c3a7c1c9-d444-4557-88b4-8d06cb54cd1e/files/8654b89f-c85a-4ff1-a680-15f4cf70ed15.jpg",
   },
   {
     id: 2,
-    title: "Павильон Стекло",
-    category: "Коммерческий объект",
-    location: "Санкт-Петербург, Россия",
-    year: "2023",
-    image: "/images/hously-2.png",
+    title: "Коттеджный посёлок",
+    category: "Частные дома",
+    location: "32 объекта",
+    year: "2024",
+    image: "https://cdn.poehali.dev/projects/c3a7c1c9-d444-4557-88b4-8d06cb54cd1e/files/b75379dc-41d5-4b5c-9a1b-c98a5b928169.jpg",
   },
   {
     id: 3,
-    title: "Дом у моря",
-    category: "Жилой дом",
-    location: "Сочи, Россия",
+    title: "Балконы под ключ",
+    category: "Тёплое остекление",
+    location: "Серия 5-этажных домов",
     year: "2023",
-    image: "/images/hously-3.png",
+    image: "https://cdn.poehali.dev/projects/c3a7c1c9-d444-4557-88b4-8d06cb54cd1e/files/66555ec8-da38-4567-916a-e00ce6a267f6.jpg",
   },
   {
     id: 4,
-    title: "Северный приют",
-    category: "Гостиничный комплекс",
-    location: "Казань, Россия",
-    year: "2024",
-    image: "/images/hously-4.png",
+    title: "Офисный центр",
+    category: "Коммерческое остекление",
+    location: "Фасадные системы",
+    year: "2023",
+    image: "https://cdn.poehali.dev/projects/c3a7c1c9-d444-4557-88b4-8d06cb54cd1e/files/840bcb34-2c6a-49a1-861f-14d716cdd7fc.jpg",
   },
 ]
 
@@ -68,8 +68,8 @@ export function Projects() {
       <div className="container mx-auto px-6 md:px-12">
         <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-16">
           <div>
-            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Избранные работы</p>
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наши проекты</h2>
+            <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-6">Выполненные объекты</p>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-medium tracking-tight">Наши работы</h2>
           </div>
           <a
             href="#"
